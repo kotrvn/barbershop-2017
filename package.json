@@ -1,7 +1,7 @@
 {
-  "name": "stmp-gulp",
-  "version": "1.2.0",
-  "description": "start-template",
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "barbershop",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
