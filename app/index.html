@@ -16,17 +16,157 @@
   <meta name="msapplication-navbutton-color" content="#000">
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-  <title>Заголовок сайта</title>
+  <title>Барбершоп "Бородинский"</title>
   <link rel="stylesheet" href="css/libs.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп 'Бородинский'">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Наши работы</a></li>
+          <li class="site-list__item"><a href="form.html">Записаться</a></li>
+          <li class="site-list__item"><a href="#">Контакты</a></li>
+          <li class="site-list__item"><a href="#">HTML ACADEMY</a></li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item"><a class="user-list__login" href="login.html">Войти</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Барбершоп "Бородинский" - истинно мужская классика</h1>
 
+    <section class="stats">
+      <header class="stats__header">
+        <h2 class="visually-hidden">Статистика барбершопа</h2>
+        <b class="stats__slogan">Lorem ipsum dolor sit amet.</b>
+        <p class="stats__intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, esse.</p>
+        <small class="stats__legend stats__legend--top"><sup>*</sup> - Lorem ipsum dolor sit.</small>
+      </header>
+      <table class="stats__list">
+        <tr>
+          <td class="stats__value">1 500 <sup>*</sup> </td>
+          <td class="stats__field">Рублей<br> вложений</td>
+        </tr>
+        <tr>
+          <td class="stats__value">7 200 <sup>*</sup> </td>
+          <td class="stats__field">Рублей<br> вложений</td>
+        </tr>
+        <tr>
+          <td class="stats__value">1500 <sup>*</sup> </td>
+          <td class="stats__field">Рублей<br> вложений</td>
+        </tr>
+        <tr>
+          <td class="stats__value">1500 <sup>*</sup> </td>
+          <td class="stats__field">Рублей<br> вложений</td>
+        </tr>
+      </table>
+      <small class="stats__legend stats__legend--bottom"><sup>*</sup> - Lorem ipsum dolor sit.</small>
+    </section>
+    <section class="advanages">
+      <div class="advanages__wrapper slider">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="advanages__list">
+          <li class="advanages__item slider__list">
+            <h3 class="advanages__title">Быстро</h3>
+            <p class="advanages_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita provident recusandae maxime ipsam asperiores quae ratione animi amet saepe omnis.</p>
+          </li>
+          <li class="advanages__item slider__list">
+            <h3 class="advanages__title">Круто</h3>
+            <p class="advanages_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur debitis explicabo quod dolores ea fugiat dolorem temporibus, aut, voluptates enim.</p>
+          </li>
+          <li class="advanages__item slider__list">
+            <h3 class="advanages__title">Дорого</h3>
+            <p class="advanages_descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex sapiente vel, commodi sint laborum delectus eius earum nisi nesciunt? Error!</p>
+          </li>
+        </ul>
+        <p class="advanages__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__wrapper">
+        <h2 class="news__title"></h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <time class="time__date" datetime="21.12.2012">
+              <b class="time__day">21</b>сент
+            </time>
+            <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum minus dicta adipisci illum reiciendis fuga iste, ut neque soluta magnam earum culpa officiis aperiam vel assumenda veritatis porro eum temporibus.</p>
+          </li>
+          <li class="news__item">
+            <time class="time__date" datetime="21.12.2012">
+              <b class="time__day">21</b>сент
+            </time>
+            <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum minus dicta adipisci illum reiciendis fuga iste, ut neque soluta magnam earum culpa officiis aperiam vel assumenda veritatis porro eum temporibus.</p>
+          </li>
+          <a href="" class="news__to-all button">Показать все</a>
+        </ul>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2 class="reviews__title">Отзывы о нас:</h2>
+      <a href="" class="reviews__write button">Оставить свой</a>
+      <div class="reviews__list slider__list">
+        <blockquote class="reviews__item slider__item">
+          <p class="reviews__author-picture"><img src="img/picture-travis.jpg" alt="Травис Бакера" width="50" height="33" class="reviews__author-image"></p>
+          <cite class="reviews__author-name">Травис Байкер</cite>
+          <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi, mollitia fugit iusto, repellat rem consequatur, omnis ab quos, reiciendis consectetur eos dignissimos magnam at voluptatibus! Aperiam non perferendis ipsam!</p>
+        </blockquote>
+        <blockquote class="reviews__item slider__item">
+          <p class="reviews__author-picture"><img src="img/picture-travis.jpg" alt="Травис Бакера" width="50" height="33" class="reviews__author-image"></p>
+          <cite class="reviews__author-name">Травис Байкер</cite>
+          <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi, mollitia fugit iusto, repellat rem consequatur, omnis ab quos, reiciendis consectetur eos dignissimos magnam at voluptatibus! Aperiam non perferendis ipsam!</p>
+        </blockquote>
+        <blockquote class="reviews__item slider__item">
+          <p class="reviews__author-picture"><img src="img/picture-travis.jpg" alt="Травис Бакера" width="50" height="33" class="reviews__author-image"></p>
+          <cite class="reviews__author-name">Травис Байкер</cite>
+          <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque commodi, mollitia fugit iusto, repellat rem consequatur, omnis ab quos, reiciendis consectetur eos dignissimos magnam at voluptatibus! Aperiam non perferendis ipsam!</p>
+        </blockquote>
+        <button class="reviews__prev" type="button">Предидущий отзыв</button>
+        <button class="reviews__next" type="button">Следующий отзыв</button>
+      </div>
+      <p class="reviews__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Барбершоп бородинский</b>
+        <p class="contacts__text">Lorem ipsum dolor sit amet, consectetur.
+          <a class="contacts__phone" href="tel:555-55-55" ><span class="contacts__phone-mobile">555-55-55</span></a>
+        </p>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a href="#" class="social__link social__link--vk">Мы в контакте</a></li>
+          <li class="social__item social__link--fb"><a href="#" class="social__link">Мы в фейсбуке</a></li>
+          <li class="social__item social__link--inst"><a href="#" class="social__link">Мы в инстаграме</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copiryght">
+        <b class="copiryght__text">Разработанно</b>
+        <a href="#" class="button copiryght__link">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
   <script src="libs.min.js"></script>
   <script src="main.js"></script>
 </body>
